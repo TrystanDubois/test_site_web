@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #000000;
+    color: white;
+}
+
+#header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(bugati.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.container {
+    padding: 5px 10%;
+    margin-top: 0;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 150px;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 1px 20px;
+    font-size: 20px;
+    font-weight: 600;
+    position: relative;
+    background: #000000;
+}
+
+nav ul li a {
+    color: #F0E68C;
+    text-decoration: none;
+    position: relative;
+    background: #000000;
+}
+
+nav ul li a::after {
+    content: "";
+    width: 0;
+    height: 4px;
+    background: #F0E68C;
+    position: absolute;
+    left: 0;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+.header-text {
+    font-size: 20px;
+    font-weight: 60%;
+    margin-top: 20%;
+}
+
+.header-text h1 {
+    font-size: 50px;
+    margin-top: 10px;
+}
+
+.header-text h1 span {
+    color: #F0E68C;
+}
+
+.about {
+    padding: 60px 0;
+    color: rgb(226, 237, 237);
+}
+
+.about p {
+    margin-top: 20px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.about-col-1 {
+    flex-basis: 30%;
+}
+
+.about-col-1 img {
+    width: 90%;
+    border-radius: 50%;
+}
+
+.about-col-2 {
+    flex-basis: 60%;
+}
+
+.sub-tittle {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.tab_tittles {
+    display: flex;
+}
+
+.tab-links {
+    margin-right: 50px;
+    font-size: 10px;
+    font-weight: 400;
+    position: relative;
+}
+
+.tabl-links.active-links {
+    position: relative;
+}
+
+.tabl-links.active-links::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #F0E68C;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    transition: width 0.5s;
+}
+
